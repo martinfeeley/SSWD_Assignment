@@ -1,7 +1,8 @@
 <?php
 # 
 # The Button component is used to create a button elements for 
-# forms. Each of its fields corresponds to an attribute of the html <button> tag, with the exception of the $text field, which = the inner text of the button
+# forms. Each of its fields corresponds to an attribute of the html <button> tag, with the exception of the $text field, 
+# which = the inner text of the button
 #
 # It has getters and setters for each of its five fields
 # 
@@ -12,8 +13,8 @@
 class Button implements Component{
 	private $name;
 	private $value;
-	private $text;
-	private $classList = 'btn btn-primary';
+	private $text; // what the button will display - e.g. submit
+	private $classList = 'btn btn-primary'; //
 	private $formAction;
 	public function __construct($name, $value = null, $text = null){
 		$this->name = $name;
